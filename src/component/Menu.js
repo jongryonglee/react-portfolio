@@ -51,7 +51,7 @@ function Menu() {
             <Link
               className={flag1 ? "list-link-on" : "list-link"}
               onClick={handleClick1}
-              to="/"
+              to="/react-portfolio/"
             >
               HOME
             </Link>
@@ -60,7 +60,7 @@ function Menu() {
             <Link
               className={flag2 ? "list-link-on" : "list-link"}
               onClick={handleClick2}
-              to="/about"
+              to="/react-portfolio/about"
             >
               ABOUT
             </Link>
@@ -69,7 +69,7 @@ function Menu() {
             <Link
               className={flag3 ? "list-link-on" : "list-link"}
               onClick={handleClick3}
-              to="/skills"
+              to="/react-portfolio/skills"
             >
               SKILLS
             </Link>
@@ -78,7 +78,7 @@ function Menu() {
             <Link
               className={flag4 ? "list-link-on" : "list-link"}
               onClick={handleClick4}
-              to="/works"
+              to="/react-portfolio/works"
             >
               WORKS
             </Link>
@@ -87,7 +87,7 @@ function Menu() {
             <Link
               className={flag5 ? "list-link-on" : "list-link"}
               onClick={handleClick5}
-              to="/blogs"
+              to="/react-portfolio/blogs"
             >
               BLOGS
             </Link>
