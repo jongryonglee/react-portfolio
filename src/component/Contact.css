@@ -1,0 +1,30 @@
+.contact-menu {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0px;
+  margin: 15px;
+  height: 100px;
+}
+
+.contact-item {
+  display: inline-block;
+  padding: 30px;
+}
+
+.contact-item img {
+  height: 50px;
+  width: 50px;
+}
+
+.facebook {
+  filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg)
+    brightness(100%) contrast(145%);
+}
+
+.instagram {
+  filter: invert(11%) sepia(71%) saturate(5170%) hue-rotate(293deg)
+    brightness(87%) contrast(111%);
+}

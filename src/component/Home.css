@@ -1,0 +1,61 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  height: 550px;
+}
+
+.text-container h1 {
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transform: rotate(16deg);
+}
+
+.face-img {
+  animation: myanimation 10s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes myanimation {
+  0% {
+    transform: rotate(0deg);
+    filter: invert(15%) sepia(95%) saturate(6932%) hue-rotate(358deg)
+      brightness(95%) contrast(112%);
+  }
+  14% {
+    transform: rotate(8deg);
+    filter: invert(72%) sepia(26%) saturate(6428%) hue-rotate(1deg)
+      brightness(105%) contrast(102%);
+  }
+  28% {
+    transform: rotate(16deg);
+    filter: invert(81%) sepia(81%) saturate(633%) hue-rotate(359deg)
+      brightness(106%) contrast(105%);
+  }
+  42% {
+    transform: rotate(24deg);
+    filter: invert(17%) sepia(91%) saturate(7085%) hue-rotate(128deg)
+      brightness(100%) contrast(106%);
+  }
+  56% {
+    transform: rotate(24deg);
+    filter: invert(88%) sepia(100%) saturate(2929%) hue-rotate(104deg)
+      brightness(99%) contrast(104%);
+  }
+  70% {
+    transform: rotate(16deg);
+    filter: invert(8%) sepia(99%) saturate(7044%) hue-rotate(247deg)
+      brightness(100%) contrast(145%);
+  }
+  84% {
+    transform: rotate(8deg);
+    filter: invert(11%) sepia(71%) saturate(5170%) hue-rotate(293deg)
+      brightness(87%) contrast(111%);
+  }
+  100% {
+    transform: rotate(0deg);
+    filter: invert(15%) sepia(95%) saturate(6932%) hue-rotate(358deg)
+      brightness(95%) contrast(112%);
+  }
+}
