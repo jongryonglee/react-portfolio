@@ -4,7 +4,7 @@ import javascript from "../images/javascript.png";
 import java from "../images/java.png";
 import cplus from "../images/c++.png";
 import react from "../images/react.png";
-import ionic from "../images/ionic.png";
+
 import { Grid } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import posed from "react-pose";
@@ -28,7 +28,9 @@ function Skills() {
     setTimeout(() => {
       setVisible(!isVisible);
     }, 500);
+    // eslint-disable-next-line
   }, []);
+
   return (
     <Box className="name" pose={isVisible ? "visible" : "hidden"}>
       <Grid container justify="center">
@@ -56,9 +58,6 @@ function Skills() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <MyCard img={cplus} title={"C++"} text={"description"} kind="1" />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <MyCard img={ionic} title={"Ionic"} text={"description"} kind="1" />
         </Grid>
       </Grid>
     </Box>

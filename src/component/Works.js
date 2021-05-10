@@ -26,6 +26,7 @@ function Works() {
     setTimeout(() => {
       setVisible(!isVisible);
     }, 500);
+    // eslint-disable-next-line
   }, []);
   return (
     <Box className="name" pose={isVisible ? "visible" : "hidden"}>
