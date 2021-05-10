@@ -12,11 +12,11 @@ function App() {
   return (
     <BrowserRouter>
       <Menu />
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/skills" component={Skills} />
-      <Route path="/works" component={Works} />
-      <Route path="/blogs" component={Blogs} />
+      <Route exact path="/react-portfolio/" component={Home} />
+      <Route path="/react-portfolio/about" component={About} />
+      <Route path="/react-portfolio/skills" component={Skills} />
+      <Route path="/react-portfolio/works" component={Works} />
+      <Route path="/react-portfolio/blogs" component={Blogs} />
       <Contact />
     </BrowserRouter>
   );
