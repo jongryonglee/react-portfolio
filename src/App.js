@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <Menu />
-      <Route exact path="/" component={Home} />
+      <Route exact path="/react-portfolio/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/skills" component={Skills} />
       <Route path="/works" component={Works} />
