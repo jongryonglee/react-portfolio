@@ -18,7 +18,7 @@
   font-family: "Gill Sans";
   font-style: italic;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 900;
   color: black;
 }
 
@@ -26,20 +26,65 @@
   font-family: "Gill Sans";
   font-style: italic;
   font-size: 36px;
-  font-weight: 600;
-  color: white;
-  background-color: black;
+  font-weight: 900;
   padding: 10px;
   border-radius: 5px;
+}
+.home:hover {
+  color: white;
+  background-color: black;
+}
+
+.about:hover {
+  color: white;
+  background-color: rgb(239, 71, 111);
+}
+
+.skills:hover {
+  color: white;
+  background-color: rgb(255, 209, 102);
+}
+
+.works:hover {
+  color: white;
+  background-color: rgb(6, 214, 160);
+}
+
+.blogs:hover {
+  color: white;
+  background-color: rgb(17, 138, 178);
 }
 
 .list-link-on {
   font-family: "Gill Sans";
   font-style: italic;
   font-size: 36px;
-  font-weight: 600;
-  color: white;
-  background-color: black;
+  font-weight: 900;
   padding: 10px;
   border-radius: 5px;
+}
+
+.-home {
+  color: white;
+  background-color: black;
+}
+
+.-about {
+  color: white;
+  background-color: rgb(239, 71, 111);
+}
+
+.-skills {
+  color: white;
+  background-color: rgb(255, 209, 102);
+}
+
+.-works {
+  color: white;
+  background-color: rgb(6, 214, 160);
+}
+
+.-blogs {
+  color: white;
+  background-color: rgb(17, 138, 178);
 }

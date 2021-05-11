@@ -2,11 +2,18 @@ import MyCard from "./MyCard";
 import portfolio from "../images/portfolio.jpg";
 import TicToc from "../images/tictoctoe.jpg";
 import todoList from "../images/todolist.png";
+import reactPortfolio from "../images/reactPortfolio.jpg";
 import map from "../images/map.jpg";
-import { Grid } from "@material-ui/core";
+import { Grid, makeStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import posed from "react-pose";
 import CardModal from "./CardModal";
+
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: "rgb(6, 214, 160)",
+  },
+});
 
 const Box = posed.div({
   visible: {
@@ -22,6 +29,7 @@ const Box = posed.div({
 });
 
 function Works() {
+  const classes = useStyles();
   const [open, setOpen] = useState(false);
   const [clickedID, setID] = useState("");
 
@@ -44,9 +52,7 @@ function Works() {
             onClose={handleClose}
             img={portfolio}
             title={"Portfolio"}
-            text={
-              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-            }
+            text={"My first portfolio site coded with only HTML&CSS."}
             languages={"HTML, CSS"}
             demo={"https://jongryonglee.github.io/Portfolio/"}
             github={"https://github.com/jongryonglee/Portfolio"}
@@ -61,7 +67,7 @@ function Works() {
             img={TicToc}
             title={"Tic Toc Toe"}
             text={
-              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              "Tic Toc Toe game coded with JavaScript that can save scores into local storage."
             }
             languages={"HTML, CSS, JavaScript"}
             demo={"https://jongryonglee.github.io/tictoctoe/"}
@@ -76,7 +82,7 @@ function Works() {
             img={map}
             title={"Location Sharing App"}
             text={
-              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              "Location Sharing App coded with JavaScript that can search current location and make an url of the location that is pointed on the map. I used Google Map API for this app."
             }
             languages={"HTML, CSS, JavaScript"}
             github={"https://github.com/jongryonglee/locationsharing"}
@@ -90,7 +96,7 @@ function Works() {
             img={todoList}
             title={"React ToDo List"}
             text={
-              "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+              "This React ToDo List App is my first React project. This app allows user to create, edit, delete, and check to delete a task to do."
             }
             languages={"HTML, CSS, JavaScript, React"}
             demo={"https://jongryonglee.github.io/react-todolist/"}
@@ -98,8 +104,22 @@ function Works() {
           />
         );
 
+      case "5":
+        return (
+          <CardModal
+            open={open}
+            onClose={handleClose}
+            img={reactPortfolio}
+            title={"React Portfolio"}
+            text={"I created new style portfolio with React."}
+            languages={"HTML, CSS, JavaScript, React"}
+            demo={"https://jongryonglee.github.io/react-portfolio/"}
+            github={"https://github.com/jongryonglee/react-portfolio"}
+          />
+        );
+
       default:
-        return "foo";
+        return <></>;
     }
   };
 
@@ -112,51 +132,63 @@ function Works() {
   }, []);
 
   return (
-    <Box className="name" pose={isVisible ? "visible" : "hidden"}>
-      <Grid container>
-        <Grid item xs={12} sm={6} md={4}>
-          <div id="1" onClick={handleClicked}>
-            <MyCard
-              img={portfolio}
-              title={"Portfolio"}
-              text={"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}
-              kind={"2"}
-            />
-          </div>
+    <div className={classes.root}>
+      <Box pose={isVisible ? "visible" : "hidden"}>
+        <Grid container>
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="1" onClick={handleClicked}>
+              <MyCard
+                img={portfolio}
+                title={"Portfolio"}
+                text={"Click to see details"}
+                kind={"2"}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="2" onClick={handleClicked}>
+              <MyCard
+                img={TicToc}
+                title={"Tic Toc Toe"}
+                text={"Click to see details"}
+                kind={"2"}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="3" onClick={handleClicked}>
+              <MyCard
+                img={map}
+                title={"Location Sharing App"}
+                text={"Click to see details"}
+                kind={"2"}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="4" onClick={handleClicked}>
+              <MyCard
+                img={todoList}
+                title={"React ToDo List"}
+                text={"Click to see details"}
+                kind={"2"}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="5" onClick={handleClicked}>
+              <MyCard
+                img={reactPortfolio}
+                title={"React Portfolio"}
+                text={"Click to see details"}
+                kind={"2"}
+              />
+            </div>
+          </Grid>
+          {renderSwitch(clickedID)}
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <div id="2" onClick={handleClicked}>
-            <MyCard
-              img={TicToc}
-              title={"Tic Toc Toe"}
-              text={"description"}
-              kind={"2"}
-            />
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <div id="3" onClick={handleClicked}>
-            <MyCard
-              img={map}
-              title={"Location Sharing App"}
-              text={"description"}
-              kind={"2"}
-            />
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <div id="4" onClick={handleClicked}>
-            <MyCard
-              img={todoList}
-              title={"React ToDo List"}
-              text={"description"}
-              kind={"2"}
-            />
-          </div>
-        </Grid>
-        {renderSwitch(clickedID)}
-      </Grid>
-    </Box>
+      </Box>
+    </div>
   );
 }
 

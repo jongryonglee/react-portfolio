@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
-import { Modal, Grid } from "@material-ui/core";
+import { Modal, Grid, Typography } from "@material-ui/core";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
+import { BsFillCameraVideoFill } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -15,23 +17,26 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "10px",
     border: "2px solid #000",
     width: "80%",
-    height: "90%",
+    height: "80%",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     textAlign: "center",
   },
-  box: {
-    borderRight: "solid 1px #ddd",
-  },
   img: {
     width: "80%",
-    height: "100%",
+    height: "90%",
     borderRadius: "10px",
+    border: "solid 3px #ddd",
   },
   description: {
     wordBreak: "break-all",
     textAlign: "left",
     padding: "20px",
+  },
+  title: {
+    fontWeight: "900",
+    color: "rgb(6, 214, 160)",
+    borderBottom: "solid 3px #ddd",
   },
 }));
 
@@ -56,21 +61,57 @@ function CardModal(props) {
         <div className={classes.paper}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
-              <img src={props.img} alt="" className={classes.img} />
+              <a href={props.demo}>
+                <img src={props.img} alt="" className={classes.img} />
+              </a>
             </Grid>
 
-            <Grid item xs={6} className={classes.box}>
-              <h1 id="transition-modal-description" className={classes.title}>
-                Title: {props.title}
-              </h1>
-              <p className={classes.description}>{props.text}</p>
-              <a href={props.demo}>demo </a>
-              <a href={props.github}>github</a>
-            </Grid>
+            <Grid container spacing={3}>
+              <Grid item xs={6}>
+                <Typography
+                  variant="h4"
+                  component="h3"
+                  className={classes.title}
+                >
+                  Title: {props.title}
+                </Typography>
+                <Typography
+                  variant="body1"
+                  gutterBottom
+                  className={classes.description}
+                  color="textSecondary"
+                >
+                  {props.text}
+                </Typography>
+              </Grid>
 
-            <Grid item xs={6}>
-              <h1>Languages</h1>
-              <p className={classes.description}>{props.languages}</p>
+              <Grid item xs={6}>
+                <Typography
+                  variant="h4"
+                  component="h3"
+                  className={classes.title}
+                >
+                  Languages
+                </Typography>
+                <Typography
+                  variant="body1"
+                  className={classes.description}
+                  color="textSecondary"
+                >
+                  {props.languages}
+                </Typography>
+                <Typography variant="body1" className={classes.description}>
+                  <a href={props.demo}>
+                    <BsFillCameraVideoFill />
+                    demo
+                  </a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href={props.github}>
+                    <AiFillGithub />
+                    github
+                  </a>
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
         </div>

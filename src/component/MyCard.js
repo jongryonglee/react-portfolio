@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   img2: {
     width: "95%",
     border: "solid 2px gray",
-    borderRadius: "5px",
+    borderRadius: "10px",
     boxShadow: "rgb(38, 57, 77) 0px 10px 10px -10px;",
   },
   title: {
