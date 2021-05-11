@@ -28,7 +28,10 @@ const useStyles = makeStyles({
     borderBottom: "solid 4px gray",
   },
   description: {
-    wordBreak: "break-all",
+    wordBreak: "normal",
+  },
+  icon: {
+    width: 15,
   },
 });
 
@@ -61,6 +64,7 @@ function MyCard(props) {
               component="p"
               className={classes.description}
             >
+              <img src={props.icon} alt="" className={classes.icon} />
               {props.text}
             </Typography>
           </CardContent>

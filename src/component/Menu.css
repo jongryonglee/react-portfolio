@@ -19,6 +19,7 @@
   font-style: italic;
   font-size: 36px;
   font-weight: 900;
+  padding: 10px;
   color: black;
 }
 
@@ -87,4 +88,33 @@
 .-blogs {
   color: white;
   background-color: rgb(17, 138, 178);
+}
+
+@media screen and (max-width: 540px) {
+  .list-link {
+    font-family: "Gill Sans";
+    font-style: italic;
+    font-size: 27px;
+    font-weight: 900;
+    padding: 5px;
+    color: black;
+  }
+
+  .list-link:hover {
+    font-family: "Gill Sans";
+    font-style: italic;
+    font-size: 27px;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .list-link-on {
+    font-family: "Gill Sans";
+    font-style: italic;
+    font-size: 27px;
+    font-weight: 900;
+    padding: 5px;
+    border-radius: 5px;
+  }
 }

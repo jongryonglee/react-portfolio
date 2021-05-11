@@ -11,17 +11,19 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    overflow: "scroll",
+    height: "100%",
   },
   paper: {
     backgroundColor: "white",
     borderRadius: "10px",
     border: "2px solid #000",
     width: "80%",
-    height: "80%",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     textAlign: "center",
   },
+
   img: {
     width: "80%",
     height: "90%",
@@ -29,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     border: "solid 3px #ddd",
   },
   description: {
-    wordBreak: "break-all",
+    wordBreak: "normal",
     textAlign: "left",
     padding: "20px",
   },
@@ -37,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "900",
     color: "rgb(6, 214, 160)",
     borderBottom: "solid 3px #ddd",
+    "@media (max-width:599px)": { fontSize: "27px" },
+  },
+  iconColor: {
+    color: "rgb(6, 214, 160)",
   },
 }));
 
@@ -73,7 +79,7 @@ function CardModal(props) {
                   component="h3"
                   className={classes.title}
                 >
-                  Title: {props.title}
+                  {props.title}
                 </Typography>
                 <Typography
                   variant="body1"
@@ -91,7 +97,7 @@ function CardModal(props) {
                   component="h3"
                   className={classes.title}
                 >
-                  Languages
+                  Skills
                 </Typography>
                 <Typography
                   variant="body1"
@@ -101,12 +107,12 @@ function CardModal(props) {
                   {props.languages}
                 </Typography>
                 <Typography variant="body1" className={classes.description}>
-                  <a href={props.demo}>
+                  <a href={props.demo} className={classes.iconColor}>
                     <BsFillCameraVideoFill />
                     demo
                   </a>
                   &nbsp;&nbsp;&nbsp;
-                  <a href={props.github}>
+                  <a href={props.github} className={classes.iconColor}>
                     <AiFillGithub />
                     github
                   </a>

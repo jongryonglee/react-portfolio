@@ -8,6 +8,7 @@ import { Grid, makeStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import posed from "react-pose";
 import CardModal from "./CardModal";
+import clickIcon from "../images/cursorArrow.png";
 
 const useStyles = makeStyles({
   root: {
@@ -140,8 +141,9 @@ function Works() {
               <MyCard
                 img={portfolio}
                 title={"Portfolio"}
-                text={"Click to see details"}
+                text={"Click to show details"}
                 kind={"2"}
+                icon={clickIcon}
               />
             </div>
           </Grid>
@@ -150,8 +152,9 @@ function Works() {
               <MyCard
                 img={TicToc}
                 title={"Tic Toc Toe"}
-                text={"Click to see details"}
+                text={"Click to show details"}
                 kind={"2"}
+                icon={clickIcon}
               />
             </div>
           </Grid>
@@ -160,8 +163,9 @@ function Works() {
               <MyCard
                 img={map}
                 title={"Location Sharing App"}
-                text={"Click to see details"}
+                text={"Click to show details"}
                 kind={"2"}
+                icon={clickIcon}
               />
             </div>
           </Grid>
@@ -170,8 +174,9 @@ function Works() {
               <MyCard
                 img={todoList}
                 title={"React ToDo List"}
-                text={"Click to see details"}
+                text={"Click to show details"}
                 kind={"2"}
+                icon={clickIcon}
               />
             </div>
           </Grid>
@@ -180,8 +185,9 @@ function Works() {
               <MyCard
                 img={reactPortfolio}
                 title={"React Portfolio"}
-                text={"Click to see details"}
+                text={"Click to show details"}
                 kind={"2"}
+                icon={clickIcon}
               />
             </div>
           </Grid>
