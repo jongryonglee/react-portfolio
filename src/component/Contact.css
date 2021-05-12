@@ -28,3 +28,10 @@
   filter: invert(11%) sepia(71%) saturate(5170%) hue-rotate(293deg)
     brightness(87%) contrast(111%);
 }
+
+@media (max-width: 599px) {
+  .contact-item {
+    display: inline-block;
+    padding: 10px;
+  }
+}

@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
-import { Modal, Grid, Typography } from "@material-ui/core";
+import { Modal, Grid, Typography, Grow } from "@material-ui/core";
 import Backdrop from "@material-ui/core/Backdrop";
-import Fade from "@material-ui/core/Fade";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -63,7 +62,7 @@ function CardModal(props) {
         timeout: 500,
       }}
     >
-      <Fade in={open}>
+      <Grow in={open}>
         <div className={classes.paper}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
@@ -121,7 +120,7 @@ function CardModal(props) {
             </Grid>
           </Grid>
         </div>
-      </Fade>
+      </Grow>
     </Modal>
   );
 }

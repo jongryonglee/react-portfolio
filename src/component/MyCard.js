@@ -11,6 +11,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
     margin: "20px auto",
     boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px;",
+    borderRadius: "10px",
   },
   imgContainer: {
     textAlign: "center",
