@@ -3,7 +3,6 @@ import portfolio from "../images/portfolio.jpg";
 import TicToc from "../images/tictoctoe.jpg";
 import todoList from "../images/todolist.png";
 import reactPortfolio from "../images/reactPortfolio.jpg";
-import KickOffReturn from "../images/KickOffReturn.mov";
 import KORImg from "../images/KickOffReturnImg.jpg";
 import map from "../images/map.jpg";
 import { Grid, makeStyles } from "@material-ui/core";
@@ -127,7 +126,7 @@ function Works() {
             <VideoModal
               open={open}
               onClose={handleClose}
-              img={KickOffReturn}
+              img={"https://www.youtube.com/embed/ihIlRMn7In4"}
               title={"Kick Off Return"}
               text={"I created a 3D video game by using Unity Engine with 3 people in a group."}
               languages={"C#, Unity"}

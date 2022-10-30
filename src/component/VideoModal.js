@@ -63,8 +63,8 @@ function VideoModal(props) {
             <Grid item xs={12}>
               <a href={props.demo}>
                 <CardMedia 
-                  component="video" 
-                    height="500px"
+                  component="iframe" 
+                  height="500px"
                   autoPlay
                   controls
                 src={props.img} alt="" className={classes.img} />
