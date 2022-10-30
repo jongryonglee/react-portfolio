@@ -36,7 +36,7 @@ const useStyles = makeStyles({
   },
 });
 
-function MyCard(props) {
+function ImgCard(props) {
   const classes = useStyles();
   return (
     <div>
@@ -75,4 +75,4 @@ function MyCard(props) {
   );
 }
 
-export default MyCard;
+export default ImgCard;

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
-import { Modal, Grid, Typography, Grow } from "@material-ui/core";
+import { Modal, Grid, Typography, Grow, CardMedia } from "@material-ui/core";
 import Backdrop from "@material-ui/core/Backdrop";
 import { BsFillCameraVideoFill } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
@@ -23,12 +23,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
 
-  img: {
-    width: "80%",
-    height: "90%",
-    borderRadius: "10px",
-    border: "solid 3px #ddd",
-  },
+
   description: {
     wordBreak: "normal",
     textAlign: "left",
@@ -45,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function CardModal(props) {
+function VideoModal(props) {
   const classes = useStyles();
   const { onClose, open } = props;
 
@@ -67,7 +62,11 @@ function CardModal(props) {
           <Grid container spacing={3}>
             <Grid item xs={12}>
               <a href={props.demo}>
-                <img 
+                <CardMedia 
+                  component="video" 
+                    height="500px"
+                  autoPlay
+                  controls
                 src={props.img} alt="" className={classes.img} />
               </a>
             </Grid>
@@ -126,9 +125,9 @@ function CardModal(props) {
   );
 }
 
-CardModal.propTypes = {
+VideoModal.propTypes = {
   onClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,
 };
 
-export default CardModal;
+export default VideoModal;

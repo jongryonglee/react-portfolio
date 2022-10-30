@@ -53,7 +53,7 @@ function Menu() {
               WORKS
             </Link>
           </li>
-          <li id="5" onClick={handleClicked}>
+          {/* <li id="5" onClick={handleClicked}>
             <Link
               className={
                 clickedID === "5" ? "list-link-on -blogs" : "list-link blogs"
@@ -62,7 +62,7 @@ function Menu() {
             >
               BLOGS
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

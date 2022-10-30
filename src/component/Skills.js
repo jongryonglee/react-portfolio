@@ -1,9 +1,11 @@
-import MyCard from "./MyCard";
+import MyCard from "./ImgCard";
 import html from "../images/htmlcss.png";
 import javascript from "../images/javascript.png";
 import java from "../images/java.png";
 import cPlus from "../images/c++.png";
 import react from "../images/react.png";
+import python from "../images/Python.png";
+import csharp from "../images/csharp.png";
 import { Grid, makeStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import posed from "react-pose";
@@ -48,13 +50,19 @@ function Skills() {
             <MyCard img={javascript} title={"JavaScript"} text={""} kind="1" />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <MyCard img={react} title={"React"} text={""} kind="1" />
+            <MyCard img={csharp} title={"C#"} text={""} kind="1" />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <MyCard img={java} title={"Java"} text={""} kind="1" />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <MyCard img={cPlus} title={"C++"} text={""} kind="1" />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <MyCard img={python} title={"python++"} text={""} kind="1" />
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <MyCard img={react} title={"React"} text={""} kind="1" />
           </Grid>
         </Grid>
       </Box>

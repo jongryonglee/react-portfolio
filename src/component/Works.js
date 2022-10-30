@@ -1,13 +1,16 @@
-import MyCard from "./MyCard";
+import ImgCard from "./ImgCard";
 import portfolio from "../images/portfolio.jpg";
 import TicToc from "../images/tictoctoe.jpg";
 import todoList from "../images/todolist.png";
 import reactPortfolio from "../images/reactPortfolio.jpg";
+import KickOffReturn from "../images/KickOffReturn.mov";
+import KORImg from "../images/KickOffReturnImg.jpg";
 import map from "../images/map.jpg";
 import { Grid, makeStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import posed from "react-pose";
 import CardModal from "./CardModal";
+import VideoModal from "./VideoModal";
 import clickIcon from "../images/cursorArrow.png";
 
 const useStyles = makeStyles({
@@ -46,7 +49,7 @@ function Works() {
 
   const renderSwitch = (id) => {
     switch (id) {
-      case "1":
+      case "6":
         return (
           <CardModal
             open={open}
@@ -119,6 +122,19 @@ function Works() {
           />
         );
 
+        case "1":
+          return (
+            <VideoModal
+              open={open}
+              onClose={handleClose}
+              img={KickOffReturn}
+              title={"Kick Off Return"}
+              text={"I created a 3D video game by using Unity Engine with 3 people in a group."}
+              languages={"C#, Unity"}
+              github={"https://github.com/jongryonglee/cs583_kickoffreturn"}
+            />
+          );
+
       default:
         return <></>;
     }
@@ -136,11 +152,11 @@ function Works() {
     <div className={classes.root}>
       <Box pose={isVisible ? "visible" : "hidden"}>
         <Grid container>
-          <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={4}>
             <div id="1" onClick={handleClicked}>
-              <MyCard
-                img={portfolio}
-                title={"Portfolio"}
+              <ImgCard
+                img={KORImg}
+                title={"Kick Off Return"}
                 text={"Click to show details"}
                 kind={"2"}
                 icon={clickIcon}
@@ -149,7 +165,7 @@ function Works() {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div id="2" onClick={handleClicked}>
-              <MyCard
+              <ImgCard
                 img={TicToc}
                 title={"Tic Toc Toe"}
                 text={"Click to show details"}
@@ -160,7 +176,7 @@ function Works() {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div id="3" onClick={handleClicked}>
-              <MyCard
+              <ImgCard
                 img={map}
                 title={"Location Sharing App"}
                 text={"Click to show details"}
@@ -171,7 +187,7 @@ function Works() {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div id="4" onClick={handleClicked}>
-              <MyCard
+              <ImgCard
                 img={todoList}
                 title={"React ToDo List"}
                 text={"Click to show details"}
@@ -182,9 +198,21 @@ function Works() {
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
             <div id="5" onClick={handleClicked}>
-              <MyCard
+              <ImgCard
                 img={reactPortfolio}
                 title={"React Portfolio"}
+                text={"Click to show details"}
+                kind={"2"}
+                icon={clickIcon}
+              />
+            </div>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="6" onClick={handleClicked}>
+              <ImgCard
+                img={portfolio}
+                title={"Portfolio"}
                 text={"Click to show details"}
                 kind={"2"}
                 icon={clickIcon}
