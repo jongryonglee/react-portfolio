@@ -4,6 +4,7 @@ import TicToc from "../images/tictoctoe.jpg";
 import todoList from "../images/todolist.png";
 import reactPortfolio from "../images/reactPortfolio.jpg";
 import KORImg from "../images/KickOffReturnImg.jpg";
+import RADImg from "../images/RADimg.jpg";
 import map from "../images/map.jpg";
 import { Grid, makeStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
@@ -134,6 +135,19 @@ function Works() {
             />
           );
 
+          case "7":
+            return (
+              <VideoModal
+                open={open}
+                onClose={handleClose}
+                img={"https://www.youtube.com/embed/nSGE-HLAMEc"}
+                title={"Rhythm and Dungeons"}
+                text={"I created a rhythm game by using Unity and C# Scripts."}
+                languages={"C#, Unity"}
+                github={"https://github.com/jongryonglee/rhythm_and_dungeon"}
+              />
+            );
+
       default:
         return <></>;
     }
@@ -212,6 +226,17 @@ function Works() {
               <ImgCard
                 img={portfolio}
                 title={"Portfolio"}
+                text={"Click to show details"}
+                kind={"2"}
+                icon={clickIcon}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div id="7" onClick={handleClicked}>
+              <ImgCard
+                img={RADImg}
+                title={"Rhythm and Dungeons"}
                 text={"Click to show details"}
                 kind={"2"}
                 icon={clickIcon}
