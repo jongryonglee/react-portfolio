@@ -18,7 +18,7 @@ function Menu() {
               className={
                 clickedID === "1" ? "list-link-on -home" : "list-link home"
               }
-              to="/react-portfolio/"
+              to="/"
             >
               HOME
             </Link>
@@ -28,7 +28,7 @@ function Menu() {
               className={
                 clickedID === "2" ? "list-link-on -about" : "list-link about"
               }
-              to="/react-portfolio/about"
+              to="/about"
             >
               ABOUT
             </Link>
@@ -38,7 +38,7 @@ function Menu() {
               className={
                 clickedID === "3" ? "list-link-on -skills" : "list-link skills"
               }
-              to="/react-portfolio/skills"
+              to="/skills"
             >
               SKILLS
             </Link>
@@ -48,7 +48,7 @@ function Menu() {
               className={
                 clickedID === "4" ? "list-link-on -works" : "list-link works"
               }
-              to="/react-portfolio/works"
+              to="/works"
             >
               WORKS
             </Link>
