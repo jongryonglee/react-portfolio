@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.084cb8e7.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.947b4332.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.947b4332.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.fed61080.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.fed61080.js.map",
+    "static/js/2.dbbfe81e.chunk.js": "/react-portfolio/static/js/2.dbbfe81e.chunk.js",
+    "static/js/2.dbbfe81e.chunk.js.map": "/react-portfolio/static/js/2.dbbfe81e.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.084cb8e7.chunk.css.map": "/react-portfolio/static/css/main.084cb8e7.chunk.css.map",
+    "static/js/2.dbbfe81e.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.dbbfe81e.chunk.js.LICENSE.txt",
+    "static/media/FaceLogo.d10808f7.png": "/react-portfolio/static/media/FaceLogo.d10808f7.png",
+    "static/media/KickOffReturnImg.c7b30703.jpg": "/react-portfolio/static/media/KickOffReturnImg.c7b30703.jpg",
+    "static/media/Python.2ae1a754.png": "/react-portfolio/static/media/Python.2ae1a754.png",
+    "static/media/c++.1240ce15.png": "/react-portfolio/static/media/c++.1240ce15.png",
+    "static/media/csharp.fc430729.png": "/react-portfolio/static/media/csharp.fc430729.png",
+    "static/media/htmlcss.67535d94.png": "/react-portfolio/static/media/htmlcss.67535d94.png",
+    "static/media/java.5d5cffa0.png": "/react-portfolio/static/media/java.5d5cffa0.png",
+    "static/media/javascript.ba0a9285.png": "/react-portfolio/static/media/javascript.ba0a9285.png",
+    "static/media/map.d3745299.jpg": "/react-portfolio/static/media/map.d3745299.jpg",
+    "static/media/portfolio.fd8b1bd2.jpg": "/react-portfolio/static/media/portfolio.fd8b1bd2.jpg",
+    "static/media/profile.dfa1d59f.jpg": "/react-portfolio/static/media/profile.dfa1d59f.jpg",
+    "static/media/react.ef28a756.png": "/react-portfolio/static/media/react.ef28a756.png",
+    "static/media/reactPortfolio.ac5289bf.jpg": "/react-portfolio/static/media/reactPortfolio.ac5289bf.jpg",
+    "static/media/tictoctoe.0d75cafc.jpg": "/react-portfolio/static/media/tictoctoe.0d75cafc.jpg",
+    "static/media/todolist.f7672669.png": "/react-portfolio/static/media/todolist.f7672669.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fed61080.js",
+    "static/js/2.dbbfe81e.chunk.js",
+    "static/css/main.084cb8e7.chunk.css",
+    "static/js/main.947b4332.chunk.js"
+  ]
+}
