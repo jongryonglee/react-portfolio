@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.084cb8e7.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.68a39366.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.68a39366.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.e2efaef7.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.e2efaef7.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.fed61080.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.fed61080.js.map",
     "static/js/2.134b9b23.chunk.js": "/react-portfolio/static/js/2.134b9b23.chunk.js",
@@ -13,6 +13,7 @@
     "static/media/FaceLogo.d10808f7.png": "/react-portfolio/static/media/FaceLogo.d10808f7.png",
     "static/media/KickOffReturnImg.c7b30703.jpg": "/react-portfolio/static/media/KickOffReturnImg.c7b30703.jpg",
     "static/media/Python.2ae1a754.png": "/react-portfolio/static/media/Python.2ae1a754.png",
+    "static/media/RADimg.1f577707.jpg": "/react-portfolio/static/media/RADimg.1f577707.jpg",
     "static/media/c++.1240ce15.png": "/react-portfolio/static/media/c++.1240ce15.png",
     "static/media/csharp.fc430729.png": "/react-portfolio/static/media/csharp.fc430729.png",
     "static/media/htmlcss.67535d94.png": "/react-portfolio/static/media/htmlcss.67535d94.png",
@@ -30,6 +31,6 @@
     "static/js/runtime-main.fed61080.js",
     "static/js/2.134b9b23.chunk.js",
     "static/css/main.084cb8e7.chunk.css",
-    "static/js/main.68a39366.chunk.js"
+    "static/js/main.e2efaef7.chunk.js"
   ]
 }
