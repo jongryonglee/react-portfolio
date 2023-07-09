@@ -59,10 +59,10 @@ function Skills() {
             <MyCard img={cPlus} title={"C++"} text={""} kind="1" />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <MyCard img={python} title={"python++"} text={""} kind="1" />
+            <MyCard img={python} title={"Python"} text={""} kind="1" />
           </Grid>
           <Grid item xs={12} sm={6} md={4}>
-            <MyCard img={react} title={"React"} text={""} kind="1" />
+            <MyCard img={react} title={"React.js"} text={""} kind="1" />
           </Grid>
         </Grid>
       </Box>

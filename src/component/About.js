@@ -94,11 +94,9 @@ function About() {
                 Profile
               </Typography>
               <Typography>
-                Hello, My name is Jon Lee.
-                I am Korean and I was born and raised in Japan.
-                When I turned 19, I decided to come to the United States to make myself better. 
-                I went to a language school for a half year, Grossmont College for 3 years, and transferred to SDSU as a junior and I’m here now.
-
+                Hello, My name is Jon Lee. I am Korean and I was born and raised
+                in Japan. When I turned 19, I decided to come to the United
+                States to look for challenges.
               </Typography>
             </Grid>
           </Grid>
